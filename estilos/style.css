@@ -24,14 +24,17 @@
 }
 
 .container__header {
-    max-width: 1000px;
+    max-width: 1216px;
     margin: 0 auto;
     background: var(--cor6);
 }
 
 .container {
-    max-width: 1000px;
+    max-width: 1216px;
     margin: 0 auto;
+    padding: 0px 24px;
+
+    
 }
 
 body {
@@ -72,19 +75,20 @@ body {
     width: 100%;
     padding: 16px 24px;
     border-radius: 6px;
+    border: none;
     background: var(--cor3);
 }
 
 .main {
-    padding: 100px 0px;
     display: flex;
     flex-direction: column;
+    padding: 100px 24px;
     gap: 50px;
+
 }
 
 .card {
-    border: solid;
-    border-color: var(--cor2);
+    border: 2px solid var(--cor2);
     border-radius: 5px;
     background: var(--cor2);
     padding: 25px;
@@ -101,11 +105,20 @@ body {
     margin-bottom: 22px;
 }
 
-.card__date__paragraph {
+.card-date__paragraph {
     color: var(--cor6);
     font-family: inter;
     font-weight: 500;
     font-size: 14px;
+}
+
+.card__heart {
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+
+.card__heart.filled {
+    transform: scale(1.1);
 }
 
 .card__title {
